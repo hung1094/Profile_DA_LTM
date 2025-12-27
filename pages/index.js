@@ -1,78 +1,55 @@
-import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+// pages/index.js
+import Layout from '../components/Layout';
+import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div
-      className={`${geistSans.className} ${geistMono.className} flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black`}
-    >
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the index.js file.
+    <Layout>
+      {/* Giảm min-height để cân bằng với padding của Layout */}
+      <div className="min-h-[70vh] flex items-center justify-center relative px-4">
+        <div className="relative z-10 text-center max-w-5xl mx-auto">
+          {/* Badge nhỏ phía trên tiêu đề (tùy chọn nhưng rất hiện đại) */}
+          <span className="inline-block px-4 py-1.5 mb-6 text-sm font-semibold tracking-wider text-sky-700 uppercase bg-sky-100/50 rounded-full border border-sky-200">
+            Welcome to my blog
+          </span>
+
+          <h1 className="text-5xl md:text-7xl font-extrabold mb-8 tracking-tight">
+            <span className="bg-gradient-to-r from-sky-600 via-cyan-600 to-blue-700 bg-clip-text text-transparent">
+              Blog Lập Trình Mạng
+            </span>
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+
+          <p className="text-lg md:text-2xl text-slate-700 mb-12 max-w-3xl mx-auto leading-relaxed">
+            Khám phá kiến thức chuyên sâu về hệ thống mạng, giao thức và kiến trúc phần mềm với 
+            <span className="text-sky-600 font-bold"> Java</span> & 
+            <span className="text-cyan-600 font-bold"> JavaScript</span>.
           </p>
+
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+            {/* Primary Action */}
+            <Link
+              href="/blog"
+              className="group relative w-full sm:w-auto px-10 py-4 text-lg font-bold text-white rounded-2xl overflow-hidden shadow-[0_20px_50px_rgba(8,_112,_184,_0.3)] bg-sky-600 transition-all duration-300 hover:scale-105 active:scale-95"
+            >
+              <span className="absolute inset-0 bg-gradient-to-r from-sky-500 to-cyan-500 transition-all" />
+              <span className="relative z-10 flex items-center justify-center">
+                Xem tất cả bài viết
+                <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </span>
+            </Link>
+
+            {/* Secondary Action */}
+            <Link
+              href="/profile"
+              className="w-full sm:w-auto px-10 py-4 text-lg font-bold text-sky-800 bg-white/40 backdrop-blur-md rounded-2xl border border-white/50 shadow-sm hover:bg-white/60 transition-all hover:shadow-md active:scale-95"
+            >
+              Giới thiệu bản thân
+            </Link>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs/pages/getting-started?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+      </div>
+    </Layout>
   );
 }
