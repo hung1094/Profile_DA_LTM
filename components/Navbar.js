@@ -22,7 +22,7 @@ export default function Navbar() {
               <span className="text-xl font-black text-white">B</span>
             </div>
             <span className="text-xl font-extrabold bg-gradient-to-r from-sky-800 to-sky-950 bg-clip-text text-transparent truncate max-w-[150px] md:max-w-none">
-              Blog Lập Trình
+              H.Dev
             </span>
           </Link>
 
