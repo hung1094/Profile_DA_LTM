@@ -21,13 +21,13 @@ export default function Layout({ children }) {
       <footer className="relative z-10 border-t border-sky-100">
         <div className="bg-white/40 backdrop-blur-md py-8 px-4 text-center">
           <p className="text-sky-900 font-bold text-sm sm:text-base">
-            © 2025 Blog Lập Trình Mạng • Hoàng Mạnh Hùng (2280601094)
+            © 2025 Blog Lập Trình Mạng • Hoàng Mạnh Hùng 
           </p>
-          <div className="flex justify-center items-center space-x-2 mt-2 text-sky-600 text-xs sm:text-sm">
+          {/* <div className="flex justify-center items-center space-x-2 mt-2 text-sky-600 text-xs sm:text-sm">
             <span>Đồ án môn Lập trình mạng</span>
             <span className="w-1 h-1 bg-sky-300 rounded-full" />
             <span>Lớp 22DTHG2</span>
-          </div>
+          </div> */}
         </div>
       </footer>
     </div>
