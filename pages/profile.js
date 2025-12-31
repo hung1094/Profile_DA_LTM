@@ -54,7 +54,7 @@ export default function Profile() {
             <div className="h-64 bg-gradient-to-br from-sky-500 via-cyan-500 to-teal-500 relative">
               <div className="absolute inset-0 bg-black/10" />
               <div className="absolute inset-0 flex items-center justify-center">
-                <h1 className="text-white/20 text-7xl md:text-9xl font-black uppercase tracking-tighter select-none">PORTFOLIO</h1>
+                <h1 className="text-white/20 text-7xl md:text-9xl font-black uppercase tracking-tighter select-none">PROFILE</h1>
               </div>
             </div>
 
