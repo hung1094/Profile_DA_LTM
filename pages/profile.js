@@ -69,7 +69,7 @@ export default function Profile() {
                 </div>
 
                 <h2 className="mt-8 text-4xl md:text-5xl font-black text-slate-800 tracking-tight">
-                  Hoàng <span className="text-cyan-600">Mạnh Hùng</span>
+                 <span className="text-cyan-600">Hoàng Mạnh Hùng</span>
                 </h2>
                 
                 <div className="mt-6 inline-flex flex-col md:flex-row items-center gap-2 md:gap-6 px-6 py-3 bg-white/50 rounded-2xl border border-white/80 shadow-sm text-sm font-bold text-slate-600 uppercase tracking-widest">
