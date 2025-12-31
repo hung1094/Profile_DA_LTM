@@ -9,9 +9,9 @@ export default function Home() {
       <div className="min-h-[70vh] flex items-center justify-center relative px-4">
         <div className="relative z-10 text-center max-w-5xl mx-auto">
           {/* Badge nhỏ phía trên tiêu đề (tùy chọn nhưng rất hiện đại) */}
-          <span className="inline-block px-4 py-1.5 mb-6 text-sm font-semibold tracking-wider text-sky-700 uppercase bg-sky-100/50 rounded-full border border-sky-200">
+          {/* <span className="inline-block px-4 py-1.5 mb-6 text-sm font-semibold tracking-wider text-sky-700 uppercase bg-sky-100/50 rounded-full border border-sky-200">
             Welcome to my blog
-          </span>
+          </span> */}
 
           <h1 className="text-5xl md:text-7xl font-extrabold mb-8 tracking-tight">
             <span className="bg-gradient-to-r from-sky-600 via-cyan-600 to-blue-700 bg-clip-text text-transparent">

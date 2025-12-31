@@ -19,7 +19,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="group flex items-center space-x-3">
             <div className="w-10 h-10 bg-gradient-to-br from-sky-400 to-sky-600 rounded-xl flex items-center justify-center shadow-md group-hover:rotate-6 transition-transform">
-              <span className="text-xl font-black text-white">B</span>
+              <span className="text-xl font-black text-white">H</span>
             </div>
             <span className="text-xl font-extrabold bg-gradient-to-r from-sky-800 to-sky-950 bg-clip-text text-transparent truncate max-w-[150px] md:max-w-none">
               H.Dev
